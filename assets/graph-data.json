@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "label": "ML for CFD",
+      "color": { "background": "#FFCC00", "border": "#FF9900" }
+    },
+    {
+      "id": 2,
+      "label": "3. Data-Driven Surrogates",
+      "color": { "background": "#FFB3B3", "border": "#FF6666" }
+    },
+    {
+      "id": 3,
+      "label": "4. Physics-Driven Surrogates",
+      "color": { "background": "#99FF99", "border": "#33CC33" }
+    },
+    {
+      "id": 4,
+      "label": "3.1 Dependent on Discretization",
+      "color": { "background": "#CCCCCC", "border": "#888888" }
+    },
+    {
+      "id": 5,
+      "label": "3.2 Independent on Discretization",
+      "color": { "background": "#FFB3B3", "border": "#FF6666" }
+    },
+    {
+      "id": 6,
+      "label": "3.1.1 Structured Grids",
+      "color": { "background": "#CCCCCC", "border": "#888888" }
+    },
+    {
+      "id": 7,
+      "label": "3.1.2 Unstructured Grids",
+      "color": { "background": "#CCCCCC", "border": "#888888" }
+    }
+  ],
+  "edges": [
+    { "from": 1, "to": 2 },
+    { "from": 1, "to": 3 },
+    { "from": 2, "to": 4 },
+    { "from": 2, "to": 5 },
+    { "from": 4, "to": 6 },
+    { "from": 4, "to": 7 }
+  ]
+}
