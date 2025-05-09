@@ -1,5 +1,10 @@
 name: Deploy to GitHub Pages
 
+permissions:
+  contents: write        # 소스 코드(gh-pages 브랜치 포함) push 권한
+  pages: write           # GitHub Pages API 권한
+  id-token: write        # peaceiris/actions-gh-pages가 OIDC 토큰을 쓸 때 필요
+  
 # main 브랜치에 푸시될 때마다 실행
 on:
   push:
