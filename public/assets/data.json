@@ -1,0 +1,35 @@
+{
+  "CNN": {
+    "3.1.1 Regular Grid": {
+      "DPUF": {
+        "year": 2019,
+        "source": "J.FluidMech.",
+        "scenario": [
+          "Cylinder Flow"
+        ],
+        "doi": "https://doi.org/10.1017/jfm.123456",
+        "codeUrl": null
+      },
+      "TF-Net": {
+        "year": 2020,
+        "source": "KDD2020",
+        "scenario": [
+          "Turbulent Flow"
+        ],
+        "doi": null,
+        "codeUrl": "https://github.com/example/TF-Net"
+      },
+      "EquNet": {
+        "year": 2021,
+        "source": "ICLR2021",
+        "scenario": [
+          "Rayleigh-Bénard",
+          "Oceans",
+          "Heat"
+        ],
+        "doi": null,
+        "codeUrl": null
+      }
+    }
+  }
+}
