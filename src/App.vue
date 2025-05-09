@@ -1,20 +1,52 @@
 <template>
-  <div id="app">
-    <!-- MindMap 컴포넌트에 JSON 트리 데이터 전달 -->
-    <MindMap :tree="treeData" />
+  <div class="app">
+    <!-- sections가 로드되면 MindMap 렌더 -->
+    <MindMap
+      v-if="sections"
+      :sections="sections"
+      @select="onSelect"
+    />
+    <!-- 선택된 섹션이 있으면 우측 패널 열기 -->
+    <SectionPanel
+      v-if="selectedSection"
+      :data="sections[selectedSection]"
+      @close="selectedSection = null"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
-// JSON 파일 import
-import treeData from '/assets/data.json'
-// 방금 만든 MindMap.vue import
+import { ref, onMounted } from 'vue'
 import MindMap from './components/MindMap.vue'
+import SectionPanel from './components/SectionPanel.vue'
+
+type Paper   = { method:string; source:string; backbone:string; scenario:string[] }
+type SecData = { title:string; papers:Paper[] }
+type Sections = Record<string,SecData>
+
+const sections = ref<Sections|null>(null)
+const selectedSection = ref<string|null>(null)
+
+onMounted(async () => {
+  // 여기도 BASE_URL 사용
+  const url = `${import.meta.env.BASE_URL}assets/sections.json`
+  console.log('Fetching sections from', url)
+  const res = await fetch(url)
+  if (!res.ok) {
+    console.error('sections.json load failed:', res.status)
+    return
+  }
+  sections.value = await res.json()
+})
+
+function onSelect(secKey: string) {
+  selectedSection.value = secKey
+}
 </script>
 
 <style>
-/* 필요하면 전역 스타일 추가 */
-#app {
-  padding: 1rem;
+.app {
+  display: flex;
+  height: 100vh;
 }
 </style>

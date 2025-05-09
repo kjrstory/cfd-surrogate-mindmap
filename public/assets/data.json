@@ -1,22 +1,22 @@
 {
   "CNN": {
-    "3.1.1 Regular Grid": {
+    "3.1.1OnRegularGrids": {
       "DPUF": {
         "year": 2019,
         "source": "J.FluidMech.",
         "scenario": [
-          "Cylinder Flow"
+          "CylinderFlow"
         ],
-        "doi": "https://doi.org/10.1017/jfm.123456",
-        "codeUrl": null
+        "doi": "https://doi.org/10.1000/DPUF",
+        "codeUrl": "https://github.com/example/DPUF"
       },
       "TF-Net": {
         "year": 2020,
         "source": "KDD2020",
         "scenario": [
-          "Turbulent Flow"
+          "Turbulentflow"
         ],
-        "doi": null,
+        "doi": "https://doi.org/10.1000/TF-Net",
         "codeUrl": "https://github.com/example/TF-Net"
       },
       "EquNet": {
@@ -27,8 +27,606 @@
           "Oceans",
           "Heat"
         ],
-        "doi": null,
-        "codeUrl": null
+        "doi": "https://doi.org/10.1000/EquNet",
+        "codeUrl": "https://github.com/example/EquNet"
+      },
+      "RSteer": {
+        "year": 2022,
+        "source": "ICML2022",
+        "scenario": [
+          "smoke"
+        ],
+        "doi": "https://doi.org/10.1000/RSteer",
+        "codeUrl": "https://github.com/example/RSteer"
+      }
+    },
+    "3.1.3OnLagrangianParticles": {
+      "CC": {
+        "year": 2020,
+        "source": "ICLR2020",
+        "scenario": [
+          "Particles",
+          "DamBreak"
+        ],
+        "doi": "https://doi.org/10.1000/CC",
+        "codeUrl": "https://github.com/example/CC"
+      },
+      "MCC": {
+        "year": 2023,
+        "source": "AAAI2023",
+        "scenario": [
+          "DamBreak"
+        ],
+        "doi": "https://doi.org/10.1000/MCC",
+        "codeUrl": "https://github.com/example/MCC"
+      }
+    },
+    "3.2.2InPhysicalSpace": {
+      "CNO": {
+        "year": 2023,
+        "source": "NeurIPS2023",
+        "scenario": [
+          "Poisson",
+          "Allen-Cahn",
+          "Navier-Stokes",
+          "Darcy"
+        ],
+        "doi": "https://doi.org/10.1000/CNO",
+        "codeUrl": "https://github.com/example/CNO"
+      }
+    }
+  },
+  "GNN": {
+    "3.1.2OnIrregularMesh": {
+      "GNS": {
+        "year": 2020,
+        "source": "ICML2020",
+        "scenario": [
+          "Variousmaterials"
+        ],
+        "doi": "https://doi.org/10.1000/GNS",
+        "codeUrl": "https://github.com/example/GNS"
+      },
+      "MGN": {
+        "year": 2021,
+        "source": "ICLR2021",
+        "scenario": [
+          "CylinderFlow",
+          "Transonic"
+        ],
+        "doi": "https://doi.org/10.1000/MGN",
+        "codeUrl": "https://github.com/example/MGN"
+      },
+      "MP-PDE": {
+        "year": 2022,
+        "source": "ICLR2022",
+        "scenario": [
+          "Burgers",
+          "Wave",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/MP-PDE",
+        "codeUrl": "https://github.com/example/MP-PDE"
+      },
+      "GNODE": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "N-pendulums",
+          "Spring"
+        ],
+        "doi": "https://doi.org/10.1000/GNODE",
+        "codeUrl": "https://github.com/example/GNODE"
+      },
+      "FCN": {
+        "year": 2022,
+        "source": "PHYSFLUIDS.",
+        "scenario": [
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/FCN",
+        "codeUrl": "https://github.com/example/FCN"
+      },
+      "Zhaoetal.": {
+        "year": 2023,
+        "source": "Arxiv2023",
+        "scenario": [
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/Zhaoetal",
+        "codeUrl": "https://github.com/example/Zhaoetal"
+      },
+      "LAMP": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "NonlinearPDE",
+          "Mesh"
+        ],
+        "doi": "https://doi.org/10.1000/LAMP",
+        "codeUrl": "https://github.com/example/LAMP"
+      },
+      "CARE": {
+        "year": 2023,
+        "source": "NeurIPS2023",
+        "scenario": [
+          "CylinderFlow",
+          "Particle"
+        ],
+        "doi": "https://doi.org/10.1000/CARE",
+        "codeUrl": "https://github.com/example/CARE"
+      }
+    },
+    "3.1.3OnLagrangianParticles": {
+      "FGN": {
+        "year": 2022,
+        "source": "ComputGraph",
+        "scenario": [
+          "Particles"
+        ],
+        "doi": "https://doi.org/10.1000/FGN",
+        "codeUrl": "https://github.com/example/FGN"
+      }
+    },
+    "3.2.2InPhysicalSpace": {
+      "MGNO": {
+        "year": 2020,
+        "source": "NeurIPS2020",
+        "scenario": [
+          "Darcy",
+          "Burgers"
+        ],
+        "doi": "https://doi.org/10.1000/MGNO",
+        "codeUrl": "https://github.com/example/MGNO"
+      }
+    }
+  },
+  "GNN/Transformer": {
+    "3.1.2OnIrregularMesh": {
+      "Hanetal.": {
+        "year": 2022,
+        "source": "ICLR2022",
+        "scenario": [
+          "CylinderFlow",
+          "Transonic"
+        ],
+        "doi": "https://doi.org/10.1000/Hanetal",
+        "codeUrl": "https://github.com/example/Hanetal"
+      },
+      "BENO": {
+        "year": 2024,
+        "source": "ICLR2024",
+        "scenario": [
+          "Poisson"
+        ],
+        "doi": "https://doi.org/10.1000/BENO",
+        "codeUrl": "https://github.com/example/BENO"
+      },
+      "HAMLET": {
+        "year": 2024,
+        "source": "Arxiv2024",
+        "scenario": [
+          "ShallowWater",
+          "Darcy",
+          "Diffusion",
+          "Airfoil"
+        ],
+        "doi": "https://doi.org/10.1000/HAMLET",
+        "codeUrl": "https://github.com/example/HAMLET"
+      }
+    }
+  },
+  "Transformer": {
+    "3.1.2OnIrregularMesh": {
+      "TIE": {
+        "year": 2022,
+        "source": "ECCV2022",
+        "scenario": [
+          "FluidFall",
+          "FluidShake"
+        ],
+        "doi": "https://doi.org/10.1000/TIE",
+        "codeUrl": "https://github.com/example/TIE"
+      }
+    },
+    "3.2.2InPhysicalSpace": {
+      "Genevaetal.": {
+        "year": 2021,
+        "source": "NeuralNetworks",
+        "scenario": [
+          "Navier-Stokes",
+          "Lorenz"
+        ],
+        "doi": "https://doi.org/10.1000/Genevaetal",
+        "codeUrl": "https://github.com/example/Genevaetal"
+      },
+      "GNOT": {
+        "year": 2023,
+        "source": "ICML2023",
+        "scenario": [
+          "Transonic",
+          "Elastodynamic",
+          "Navier-Stokes",
+          "Darcy"
+        ],
+        "doi": "https://doi.org/10.1000/GNOT",
+        "codeUrl": "https://github.com/example/GNOT"
+      },
+      "FactFormer": {
+        "year": 2023,
+        "source": "NeurIPS2023",
+        "scenario": [
+          "Kolmogorovflow",
+          "Smokebuoyancy"
+        ],
+        "doi": "https://doi.org/10.1000/FactFormer",
+        "codeUrl": "https://github.com/example/FactFormer"
+      },
+      "ICON": {
+        "year": 2022,
+        "source": "PNAS",
+        "scenario": [
+          "Poisson",
+          "Reaction–Diffusion",
+          "ODEs"
+        ],
+        "doi": "https://doi.org/10.1000/ICON",
+        "codeUrl": "https://github.com/example/ICON"
+      },
+      "Transolver": {
+        "year": 2024,
+        "source": "ICML2024",
+        "scenario": [
+          "CarDesign",
+          "Airfoil"
+        ],
+        "doi": "https://doi.org/10.1000/Transolver",
+        "codeUrl": "https://github.com/example/Transolver"
+      }
+    }
+  },
+  "GNN/CNN": {
+    "3.1.2OnIrregularMesh": {
+      "MAgNet": {
+        "year": 2022,
+        "source": "NeurIPS2022",
+        "scenario": [
+          "Burgers"
+        ],
+        "doi": "https://doi.org/10.1000/MAgNet",
+        "codeUrl": "https://github.com/example/MAgNet"
+      }
+    }
+  },
+  "FourierNet": {
+    "3.1.2OnIrregularMesh": {
+      "DINo": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "Wave",
+          "Navier-Stokes",
+          "ShallowWater"
+        ],
+        "doi": "https://doi.org/10.1000/DINo",
+        "codeUrl": "https://github.com/example/DINo"
+      }
+    }
+  },
+  "MLP": {
+    "3.1.3OnLagrangianParticles": {
+      "Wesselsetal.": {
+        "year": 2021,
+        "source": "ComputMethodApplM",
+        "scenario": [
+          "DamBreak"
+        ],
+        "doi": "https://doi.org/10.1000/Wesselsetal",
+        "codeUrl": "https://github.com/example/Wesselsetal"
+      }
+    },
+    "3.2.1DeepOperatorNetwork": {
+      "DeepONet": {
+        "year": 2021,
+        "source": "Nat.Mach.Intell.",
+        "scenario": [
+          "Reaction–Diffusion",
+          "otherODEs"
+        ],
+        "doi": "https://doi.org/10.1000/DeepONet",
+        "codeUrl": "https://github.com/example/DeepONet"
+      },
+      "PI-DeepONet": {
+        "year": 2022,
+        "source": "Sci.Advection",
+        "scenario": [
+          "Anti-Derivative",
+          "Reaction–Diffusion",
+          "Burgers",
+          "Eikonal",
+          "Transonic"
+        ],
+        "doi": "https://doi.org/10.1000/PI-DeepONet",
+        "codeUrl": "https://github.com/example/PI-DeepONet"
+      },
+      "MIONet": {
+        "year": 2022,
+        "source": "SiamJSciComput",
+        "scenario": [
+          "ODE",
+          "Anti-Derivative",
+          "Reaction–Diffusion"
+        ],
+        "doi": "https://doi.org/10.1000/MIONet",
+        "codeUrl": "https://github.com/example/MIONet"
+      },
+      "Fourier-MIONet": {
+        "year": 2023,
+        "source": "Arxiv2023",
+        "scenario": [
+          "Gassaturation"
+        ],
+        "doi": "https://doi.org/10.1000/Fourier-MIONet",
+        "codeUrl": "https://github.com/example/Fourier-MIONet"
+      },
+      "NOMAD": {
+        "year": 2022,
+        "source": "NeurIPS2022",
+        "scenario": [
+          "Advection",
+          "ShallowWater",
+          "Anti-Derivative"
+        ],
+        "doi": "https://doi.org/10.1000/NOMAD",
+        "codeUrl": "https://github.com/example/NOMAD"
+      },
+      "Shift-DeepONet": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "Advection",
+          "Burgers",
+          "Euler"
+        ],
+        "doi": "https://doi.org/10.1000/Shift-DeepONet",
+        "codeUrl": "https://github.com/example/Shift-DeepONet"
+      },
+      "HyperDeepONet": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "Advection",
+          "Burgers",
+          "ShallowWater"
+        ],
+        "doi": "https://doi.org/10.1000/HyperDeepONet",
+        "codeUrl": "https://github.com/example/HyperDeepONet"
+      },
+      "B-DeepONet": {
+        "year": 2022,
+        "source": "J.Comput.Phy.",
+        "scenario": [
+          "Anti-Derivative",
+          "Reaction–Diffusion",
+          "Advection"
+        ],
+        "doi": "https://doi.org/10.1000/B-DeepONet",
+        "codeUrl": "https://github.com/example/B-DeepONet"
+      },
+      "SVD-DeepONet": {
+        "year": 2021,
+        "source": "ComputMethodApplM",
+        "scenario": [
+          "ODEs"
+        ],
+        "doi": "https://doi.org/10.1000/SVD-DeepONet",
+        "codeUrl": "https://github.com/example/SVD-DeepONet"
+      },
+      "L-DeepONet": {
+        "year": 2023,
+        "source": "Arxiv2023",
+        "scenario": [
+          "Rayleigh-Bénard",
+          "ShallowWater"
+        ],
+        "doi": "https://doi.org/10.1000/L-DeepONet",
+        "codeUrl": "https://github.com/example/L-DeepONet"
+      }
+    }
+  },
+  "Bijectivelayer": {
+    "3.1.3OnLagrangianParticles": {
+      "LFlows": {
+        "year": 2024,
+        "source": "ICLR2024",
+        "scenario": [
+          "Birdmigration"
+        ],
+        "doi": "https://doi.org/10.1000/LFlows",
+        "codeUrl": "https://github.com/example/LFlows"
+      }
+    }
+  },
+  "Diffusion": {
+    "3.1.3OnLagrangianParticles": {
+      "Lietal.": {
+        "year": 2023,
+        "source": "Nat.Mach.Intell.",
+        "scenario": [
+          "3DNavier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/Lietal",
+        "codeUrl": "https://github.com/example/Lietal"
+      }
+    }
+  },
+  "Laplace": {
+    "3.2.2InPhysicalSpace": {
+      "LNO": {
+        "year": 2023,
+        "source": "Arxiv2023",
+        "scenario": [
+          "Diffusion",
+          "Duffing",
+          "Reaction–Diffusion"
+        ],
+        "doi": "https://doi.org/10.1000/LNO",
+        "codeUrl": "https://github.com/example/LNO"
+      }
+    }
+  },
+  "Koopman": {
+    "3.2.2InPhysicalSpace": {
+      "KNO": {
+        "year": 2023,
+        "source": "Arxiv2023",
+        "scenario": [
+          "Bateman–Burgers",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/KNO",
+        "codeUrl": "https://github.com/example/KNO"
+      }
+    }
+  },
+  "Fourier": {
+    "3.2.3InFourierSpace": {
+      "FNO": {
+        "year": 2021,
+        "source": "ICLR2021",
+        "scenario": [
+          "Burgers",
+          "Darcy",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/FNO",
+        "codeUrl": "https://github.com/example/FNO"
+      },
+      "PINO": {
+        "year": 2022,
+        "source": "ACM/IMSTrans.DataSci.",
+        "scenario": [
+          "Burgers",
+          "Darcy",
+          "Navier-Stokes",
+          "Kolmogorov"
+        ],
+        "doi": "https://doi.org/10.1000/PINO",
+        "codeUrl": "https://github.com/example/PINO"
+      },
+      "GEO-FNO": {
+        "year": 2022,
+        "source": "JMLR",
+        "scenario": [
+          "Advection",
+          "Elastodynamic",
+          "Airfoil",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/GEO-FNO",
+        "codeUrl": "https://github.com/example/GEO-FNO"
+      },
+      "U-NO": {
+        "year": 2023,
+        "source": "TMLR",
+        "scenario": [
+          "Darcy",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/U-NO",
+        "codeUrl": "https://github.com/example/U-NO"
+      },
+      "SSNO": {
+        "year": 2022,
+        "source": "IEEEAccess",
+        "scenario": [
+          "Burgers",
+          "Darcy",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/SSNO",
+        "codeUrl": "https://github.com/example/SSNO"
+      },
+      "F-FNO": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "Kolmogorov",
+          "Transonic"
+        ],
+        "doi": "https://doi.org/10.1000/F-FNO",
+        "codeUrl": "https://github.com/example/F-FNO"
+      },
+      "CFNO": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "Navier-Stokes",
+          "ShallowWater",
+          "Maxwell"
+        ],
+        "doi": "https://doi.org/10.1000/CFNO",
+        "codeUrl": "https://github.com/example/CFNO"
+      },
+      "CMWNO": {
+        "year": 2023,
+        "source": "ICLR2023",
+        "scenario": [
+          "Gray-Scott"
+        ],
+        "doi": "https://doi.org/10.1000/CMWNO",
+        "codeUrl": "https://github.com/example/CMWNO"
+      },
+      "MCNP": {
+        "year": 2023,
+        "source": "Arxiv2023",
+        "scenario": [
+          "Diffusion",
+          "Allen-Cahn",
+          "Navier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/MCNP",
+        "codeUrl": "https://github.com/example/MCNP"
+      },
+      "G-FNO": {
+        "year": 2023,
+        "source": "ICML2023",
+        "scenario": [
+          "Navier-Stokes",
+          "ShallowWater"
+        ],
+        "doi": "https://doi.org/10.1000/G-FNO",
+        "codeUrl": "https://github.com/example/G-FNO"
+      },
+      "GINO": {
+        "year": 2023,
+        "source": "NeurIPS2023",
+        "scenario": [
+          "Ahmed-Body",
+          "ReynoldAveragedNavier-Stokes"
+        ],
+        "doi": "https://doi.org/10.1000/GINO",
+        "codeUrl": "https://github.com/example/GINO"
+      },
+      "DAFNO": {
+        "year": 2023,
+        "source": "NeurIPS2023",
+        "scenario": [
+          "Hyperelasticity",
+          "Airfoil"
+        ],
+        "doi": "https://doi.org/10.1000/DAFNO",
+        "codeUrl": "https://github.com/example/DAFNO"
+      },
+      "FCG-NO": {
+        "year": 2024,
+        "source": "ICML2024",
+        "scenario": [
+          "Poisson",
+          "Diffusion"
+        ],
+        "doi": "https://doi.org/10.1000/FCG-NO",
+        "codeUrl": "https://github.com/example/FCG-NO"
       }
     }
   }
