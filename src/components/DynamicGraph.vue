@@ -7,10 +7,14 @@ import { ref, onMounted } from 'vue'
 import { DataSet, Network } from 'vis-network/standalone'
 import 'vis-network/styles/vis-network.css'
 
+const emit = defineEmits<{
+  (e: 'select', sectionKey: string | null): void
+}>()
+
+
 const graphContainer = ref<HTMLElement>()
 
 onMounted(async () => {
-  // DEV('/') vs PROD('/<repo>/') 자동 처리
   const base = import.meta.env.DEV ? '/' : import.meta.env.BASE_URL
   const url  = `${base}assets/graph-data.json`
 
@@ -73,14 +77,25 @@ onMounted(async () => {
     animation: false
   })
 
-  network.on('click', params => {
-  if (!params.nodes.length) return;
-  const nodeId = params.nodes[0];
-  const node = nodes.get(nodeId);
-  if (node && node.label.startsWith('3.1.1')) {
-    emit('select', '3.1.1');
+network.on('click', params => {
+  // 1) 클릭된 노드가 있으면 ID, 없으면 undefined
+  const nodeId = params.nodes[0] as number | undefined
+
+  // 2) 기본은 null (패널 닫기)
+  let sectionKey: string | null = null
+
+  if (nodeId !== undefined) {
+    // 3) DataSet에서 노드 객체 꺼내기
+    const nodeData = nodes.get(nodeId)
+    if (nodeData && typeof nodeData.label === 'string') {
+      // 4) label 맨 앞 숫자 토큰을 sectionKey 로 추출
+      sectionKey = nodeData.label.split(' ')[0]
+    }
   }
-});
+
+  // 5) 최종 선택 키(또는 null) emit
+  emit('select', sectionKey)
+})
 })
 </script>
 
