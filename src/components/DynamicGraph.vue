@@ -31,8 +31,22 @@ onMounted(async () => {
   const edges = new DataSet(data.edges)
 
   // Network 생성
-  new Network(graphContainer.value!, { nodes, edges }, {
-    physics: { enabled: true, stabilization: false },
+  const network = new Network(graphContainer.value!, { nodes, edges }, {
+    physics: {
+      enabled: true,
+      stabilization: {
+        enabled: true,
+        iterations: 2000,       // 안정화 반복 수
+        updateInterval: 25
+      },
+      barnesHut: {
+        gravitationalConstant: -3000,  // 음수일수록 강한 반발력
+        centralGravity: 0.3,
+        springLength: 150,
+        springConstant: 0.02,
+        damping: 0.09
+      }
+    },
     layout: { randomSeed: 1 },
     nodes: { shape: 'box',
       font: {
@@ -58,6 +72,15 @@ onMounted(async () => {
   network.fit({
     animation: false
   })
+
+  network.on('click', params => {
+  if (!params.nodes.length) return;
+  const nodeId = params.nodes[0];
+  const node = nodes.get(nodeId);
+  if (node && node.label.startsWith('3.1.1')) {
+    emit('select', '3.1.1');
+  }
+});
 })
 </script>
 
