@@ -23,7 +23,7 @@
 import { ref } from 'vue'
 import DynamicGraph from './components/DynamicGraph.vue'
 import Section3_1_1Detail from './components/Section3_1_1Detail.vue'
-import Section3_1_1Detail from './components/Section3_1_2Detail.vue'
+import Section3_1_2Detail from './components/Section3_1_2Detail.vue'
 
 const selected = ref<string|null>(null)
 </script>
