@@ -16,7 +16,7 @@
     },
     {
       "alias": "EquNet [26]",
-      "link": "https://arxiv.org/abs/2002.03061",
+      "link": "https://arxiv.org/abs/2002.03061", //https://github.com/Rose-STL-Lab/Equivariant-Net
       "source": "ICLR 2021",
       "backbone": "CNN",
       "scenarios": [ "Rayleigh-Bénard", "Oceans", "Heat" ]
@@ -27,6 +27,36 @@
       "source": "ICML 2022",
       "backbone": "CNN",
       "scenarios": [ "smoke" ]
+    }
+  ],
+  "3.1.2": [
+    {
+      "alias": "GNS [28]",
+      "link": "https://doi.org/10.1000/GNS",
+      "source": "ICML 2020",
+      "backbone": "GNN",
+      "scenarios": ["Various materials"]
+    },
+    {
+      "alias": "MGN [29]",
+      "link": "https://doi.org/10.1000/MGN",
+      "source": "ICLR 2021",
+      "backbone": "GNN",
+      "scenarios": ["CylinderFlow", "Transonic"]
+    },
+    {
+      "alias": "MP-PDE [30]",
+      "link": "https://doi.org/10.1000/MP-PDE",
+      "source": "ICLR 2022",
+      "backbone": "GNN",
+      "scenarios": ["Burgers", "Wave", "Navier-Stokes"]
+    },
+    {
+      "alias": "Han et al. [31]",
+      "link": "https://doi.org/10.1000/Hanetal31",
+      "source": "ICLR 2022",
+      "backbone": "GNN/Transformer",
+      "scenarios": ["CylinderFlow", "Transonic"]
     }
   ]
 }
