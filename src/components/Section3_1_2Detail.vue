@@ -1,7 +1,7 @@
 <template>
   <aside class="detail-panel">
     <button class="close-btn" @click="$emit('close')">×</button>
-    <h2>3.1.1 Structured Grids</h2>
+    <h2>3.1.2 Unstructured Grids</h2>
 
     <div v-if="loading" class="loading">Loading…</div>
     <div v-else>
