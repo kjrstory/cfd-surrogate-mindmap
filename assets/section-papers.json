@@ -16,7 +16,7 @@
     },
     {
       "alias": "EquNet [26]",
-      "link": "https://arxiv.org/abs/2002.03061", //https://github.com/Rose-STL-Lab/Equivariant-Net
+      "link": "https://arxiv.org/abs/2002.03061", 
       "source": "ICLR 2021",
       "backbone": "CNN",
       "scenarios": [ "Rayleigh-Bénard", "Oceans", "Heat" ]
