@@ -12,6 +12,10 @@
     <aside class="detail-panel" v-if="selected === '3.1.1'">
       <Section3_1_1Detail @close="selected = null" />
     </aside>
+
+    <aside class="detail-panel" v-if="selected === '3.1.2'">
+      <Section3_1_1Detail @close="selected = null" />
+    </aside>
   </div>
 </template>
 
@@ -19,6 +23,7 @@
 import { ref } from 'vue'
 import DynamicGraph from './components/DynamicGraph.vue'
 import Section3_1_1Detail from './components/Section3_1_1Detail.vue'
+import Section3_1_1Detail from './components/Section3_1_2Detail.vue'
 
 const selected = ref<string|null>(null)
 </script>
