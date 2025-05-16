@@ -1,0 +1,32 @@
+{
+  "3.1.1": [
+    {
+      "alias": "DPUF [24]",
+      "link": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/datadriven-prediction-of-unsteady-flow-over-a-circular-cylinder-using-deep-learning/0DB7E8CFF3BF3D5AB4C73A9F38150316",
+      "source": "J. Fluid Mech.",
+      "backbone": "CNN",
+      "scenarios": [ "CylinderFlow" ]
+    },
+    {
+      "alias": "TF-Net [25]",
+      "link": "https://ucsdml.github.io/jekyll/update/2020/08/23/TF-Net.html",
+      "source": "KDD 2020",
+      "backbone": "CNN",
+      "scenarios": [ "Turbulent flow" ]
+    },
+    {
+      "alias": "EquNet [26]",
+      "link": "https://arxiv.org/abs/2002.03061",
+      "source": "ICLR 2021",
+      "backbone": "CNN",
+      "scenarios": [ "Rayleigh-Bénard", "Oceans", "Heat" ]
+    },
+    {
+      "alias": "RSteer [27]",
+      "link": "https://arxiv.org/abs/2201.11969",
+      "source": "ICML 2022",
+      "backbone": "CNN",
+      "scenarios": [ "smoke" ]
+    }
+  ]
+}
